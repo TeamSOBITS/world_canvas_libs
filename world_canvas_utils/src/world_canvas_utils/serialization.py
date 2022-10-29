@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Software License Agreement (BSD License)
 #
 # Copyright (c) 2014, Yujin Robot
@@ -36,8 +36,7 @@
 import genpy
 import rospy
 import roslib
-import cStringIO as StringIO
-
+from io import StringIO
 
 class SerializationError(Exception):
     pass

@@ -543,7 +543,7 @@ bool AnnotationCollection::publish(const std::string& topic_name, const std::str
       if (as_list == true)
       {
         // We try to publish all annotations if the user request to do so as a list, but...
-	srv.request.annotation_ids = this->getAnnotsDataIDs();
+    srv.request.annotation_ids = this->getAnnotsDataIDs();
       }
       else
       {
