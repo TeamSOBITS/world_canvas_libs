@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(world_canvas_client_cpp)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -15,7 +15,7 @@ catkin_package(
   CATKIN_DEPENDS roscpp unique_id uuid_msgs visualization_msgs world_canvas_msgs
 )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
